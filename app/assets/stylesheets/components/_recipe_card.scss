@@ -1,0 +1,38 @@
+.recipe-card-container {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.recipe-card-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.recipe-card-title {
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  height: 45px;
+  align-content: center;
+}
+
+.recipe-card-button {
+  text-align: center;
+  color: white;
+  width: 150px;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  margin: auto 20px;
+  padding: 5px;
+  border: 3px dashed #4CAF50;
+  /* Change border style to dashed */
+}
+// hello
+// .recipe-background {
+//   background-image: url('vegback.png');
+//   background-repeat: repeat-y;
+//   padding: 0;
+//   background-size: 100% 60%;
+//  }

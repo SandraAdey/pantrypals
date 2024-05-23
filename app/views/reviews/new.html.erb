@@ -1,0 +1,24 @@
+<%# <div class="review-container">
+  <div class="container">
+    <h1>Fill out this form to leave a review!</h1>
+    <%= simple_form_for ([@recipe, @review]) do |f| %>
+      <%# <div class="form-input-material">
+        <div class="comment">
+          <%= f.input :comment, label: 'Comment', input_html: { placeholder: "Leave your comments here!" } %>
+        <%# </div>
+      </div>
+
+      <div class="form-input-material">
+        <div class="rating">
+          <%= f.input :rating, label: 'Rating', input_html: { placeholder: "Leave a rating out of 5 stars" } %>
+        <%# </div>
+      </div>
+
+      <footer>
+        <div class="actions">
+          <%= f.submit "Submit Review" %>
+        <%# </div>
+      </footer>
+    <% end %>
+  <%# </div>
+</div> %>

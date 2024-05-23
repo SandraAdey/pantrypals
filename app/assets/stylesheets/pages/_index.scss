@@ -1,0 +1,146 @@
+// Import page-specific CSS files here.
+@import "home";
+@import "show";
+
+.content{
+  margin: 0 auto;
+  display: flex;
+  min-width: 100%;
+  max-width: 48rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: stretch;
+  width: 100%;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s ease-in-out;
+  animation: fadeInSlideInFromBottom 1s;
+}
+
+@keyframes fadeInSlideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-container {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: black;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.food-item-input {
+  height: 2.5rem;
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: monospace;
+  font-size: 1rem;
+  color: #9ca3af;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.food-item-input:focus {
+  box-shadow: none;
+}
+
+.add-button {
+  display: flex;
+  aspect-ratio: 1 / 1;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  color: white;
+  outline: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.add-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.add-button:focus-visible {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.items-list {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.submit-button {
+  transition: all 0.3s;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: black;
+
+}
+
+.custom-color {
+  background-color: #4CAF50;
+  /* Your custom color */
+  /* Add any additional styling as needed */
+  color: white;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-gap: 20px; /* Adjust this according to your design */
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .recipes-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .recipes-grid {
+    grid-template-columns: repeat(3, 1fr); /* 4 columns on extra large screens */
+  }
+}

@@ -1,0 +1,135 @@
+<!-- app/views/recipes/show.html.erb -->
+<div class="recipe-background">
+<div class="recipe-page">
+  <div class="recipe-header">
+    <div class="recipe-title">
+      <h2><%= @recipe['title'] %></h2>
+      <img src="<%= @recipe['image'] %>" class="recipe-image">
+      <% if @favorite.nil? %>
+        <form action=<%= "/favorites?recipe_id=#{@recipe["id"]}" %> method='POST'>
+          <button class="favorite-button" type='submit'><i class="fa-regular fa-heart"></i></button>
+        </form>
+      <% else %>
+        <form action=<%= "/favorites/#{@favorite.id}" %> method='DELETE'>
+          <button class="favorite-button" type='submit'><i class="fa-solid fa-heart"></i></button>
+        </form>
+      <% end %>
+    </div>
+    <p style="text-align: left;">
+      <%= raw(@recipe['summary']) %>
+    </p>
+  </div>
+
+  <div class="recipe-body">
+
+    <h3 class="sub-title" style="color: #15452B; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Ingredients</h3>
+    <ul>
+      <% @recipe['extendedIngredients'].each do |ingredient| %>
+        <li><%= ingredient['original'] %></li>
+      <% end %>
+    </ul>
+
+    <h3 class="sub-title" style="color: #15452B; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Instructions</h3>
+    <ol>
+      <%= raw @recipe['instructions'] %>
+    </ol>
+<style>
+  /* Add this inside a <style> tag in your HTML or in a separate CSS file */
+
+.review-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.review-comment {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.review-rating {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff9800; /* Example: Orange color for ratings */
+}
+
+</style>
+    <!-- SEE REVIEWS-->
+<div style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; margin: 20px 0; background-color: #f9f9f9;">
+  <div style="margin: 0 0 10px; font-size: 24px; color: #333;">
+    <h2 class="text-center">Recipe Reviews</h2>
+  </div>
+  <div style="font-size: 16px; line-height: 1.5; color: #555;">
+    <div class="reviews-section">
+      <% @recipe_reviews.each do |review| %>
+        <div class="review-container" style="background-color: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+          <p class="review-comment" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">Comment: <%= review.comment %></p>
+          <p class="review-rating" style="font-size: 1.2em; font-weight: bold; color: #ff9800;">
+
+            <% review.rating.times do %>
+              <span class="star" style="color: #ff9800;">&#9733;</span>
+            <% end %>
+            <% (5 - review.rating).times do %>
+              <span class="star empty" style="color: #ddd;">&#9734;</span>
+            <% end %>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Button trigger modal -->
+    <div style="display: flex; justify-content: center;">
+      <button type="button" class="btn custom-color" data-bs-toggle="modal" data-bs-target="#reviewModal">
+        Leave a Review
+      </button>
+    </div>
+
+    <!-- Review Modal -->
+
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="reviewModalLabel" style="background-color: #4CAF50; border-color: #4CAF50; border-radius: 10px;>Leave a Review</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Your review form can go here -->
+            <!-- For simplicity, I'll add a basic form -->
+            <form action="/recipes/<%= @recipe['id'] %>/reviews" method="post">
+              <%# <div class="mb-3">
+                <label for="review_name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="review_name" name="review[name]" required>
+              </div> %>
+              <div class="mb-3">
+                <label for="review_rating" class="form-label">Rating</label>
+                <select class="form-select" id="review_rating" name="review[rating]" required>
+                  <option value="">Select rating</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="review_comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="review_comment" name="review[comment]" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="background-color: #4CAF50; border-color: #4CAF50; border-radius: 10px;">Submit</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

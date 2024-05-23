@@ -1,0 +1,53 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+@import "recipes/index";
+
+
+html {
+  background-color: #E5EED2;
+}
+
+body {
+  // /* Set width and height to fill the entire viewport */
+  // width: 100vw;
+  // height: 100vh;
+
+  // /* Remove any default margin */
+  // margin: 0;
+
+  /* Set background properties */
+  background-image: url('vegback.png');
+  background-repeat: repeat-y;
+  padding: 0;
+  background-size: 100%;
+  // // background-color: #E5EED2;
+
+  // /* Ensure the body serves as a positioning context */
+  // position: relative;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  body {
+    /* Adjust background size for smaller screens */
+    background-size: contain;
+  }
+}
+
+.home-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}

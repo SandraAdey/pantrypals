@@ -1,0 +1,69 @@
+.homepage-recent-recipes-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.homepage-recent-recipes-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recent-recipe-button {
+  height: 62px;
+  background-color: white;
+  border-color: white;
+  font-size: 24px;
+  border-radius: 20px
+}
+
+.recipes-cards-collection {
+  display: flex;
+  width: 1440px;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.ingredients-form-container {
+  display: flex;
+  text-align: center;
+}
+
+.ingredients-text-field {
+  width: 986px;
+  height: 62px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+.ingredients-button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 9px 40px;
+  /* Adjusted padding for a normal size button */
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 14px;
+  /* Adjusted font size */
+  margin: 12px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.ingredients-button:hover {
+  background-color: #1f4e21;
+  /* Darker Green */
+}
+
+// .text_field {
+
+// }
+
+
+// hello

@@ -1,0 +1,31 @@
+.navbar {
+  //background-color: #E5EED2;
+  padding: 20px
+}
+
+.nav-link {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.red-item {
+  font-size: 40px;
+  color: red
+}

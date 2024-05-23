@@ -1,0 +1,248 @@
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-23 18:52:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms | Allocations: 4961)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-05-23 18:52:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 618)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 52.1ms | Allocations: 15486)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 526)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 206)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 6561.3ms | Allocations: 250151)
+Completed 200 OK in 6631ms (Views: 6576.2ms | ActiveRecord: 21.5ms | Allocations: 273993)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-05-23 18:53:56 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sandra@cook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "sandra@cook.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 32ms (ActiveRecord: 1.9ms | Allocations: 6495)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sandra@cook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2049)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 68)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 10737)
+Completed 200 OK in 454ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 12568)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-05-23 18:53:58 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2868)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11622)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 12798)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-05-23 18:54:00 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sandra@cook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 508)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sandra@cook.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1884)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 64)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 10455)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 10994)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2024-05-23 18:54:02 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1946)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 10550)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 11132)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-05-23 18:54:15 +0100
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"sandra@cook.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sandra@cook.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nickname") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "sandra@cook.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-05-23 17:54:16.387073"], ["updated_at", "2024-05-23 17:54:16.387073"], ["nickname", nil]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 463ms (ActiveRecord: 7.2ms | Allocations: 9410)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-23 18:54:16 +0100
+Processing by RecipesController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 759)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 127)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 42)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 9687)
+Completed 200 OK in 49ms (Views: 9.7ms | ActiveRecord: 5.4ms | Allocations: 20017)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2024-05-23 18:54:21 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (1.0ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered favorites/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 428)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 9204)
+Completed 200 OK in 50ms (Views: 13.5ms | ActiveRecord: 5.5ms | Allocations: 14793)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-23 18:54:23 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 177)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 8792)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.3ms | Allocations: 10801)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2024-05-23 18:56:17 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered favorites/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 57)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 8674)
+Completed 200 OK in 51ms (Views: 19.1ms | ActiveRecord: 11.0ms | Allocations: 11095)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2024-05-23 18:56:17 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered favorites/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 57)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8673)
+Completed 200 OK in 25ms (Views: 15.9ms | ActiveRecord: 0.9ms | Allocations: 11082)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-23 18:56:21 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 161)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 8773)
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 0.4ms | Allocations: 10653)
+
+
+Started GET "/recipes?recipe%5Bingredients%5D=eggs%2Cflour%2Csugar&commit=Find+recipes" for 127.0.0.1 at 2024-05-23 18:56:33 +0100
+Processing by RecipesController#index as HTML
+  Parameters: {"recipe"=>{"ingredients"=>"eggs,flour,sugar"}, "commit"=>"Find recipes"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered shared/_recipe_card.html.erb (Duration: 5.3ms | Allocations: 1408)
+  Rendered recipes/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 1776)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.1ms | Allocations: 4579)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <div class="recipe-card-container">
+    2:   <% if recipe['image'] %>
+    3:   <%= image_tag recipe['image'], class:"recipe-card-image", alt: recipe['title'] %>
+    4:   <% else %>
+    5:   <%= image_tag "back.png", class:"recipe-card-image"%>
+  
+app/views/shared/_recipe_card.html.erb:2:in `[]'
+app/views/shared/_recipe_card.html.erb:2
+app/views/recipes/index.html.erb:19
+app/views/recipes/index.html.erb:17:in `each'
+app/views/recipes/index.html.erb:17
+Started GET "/favorites" for 127.0.0.1 at 2024-05-23 18:56:36 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered favorites/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 83)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8834)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 0.9ms | Allocations: 11517)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2024-05-23 18:56:36 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered favorites/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 57)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 8673)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 11072)
+
+
+Started GET "/" for 127.0.0.1 at 2024-05-23 18:56:38 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 177)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 8790)
+Completed 200 OK in 32ms (Views: 25.1ms | ActiveRecord: 0.3ms | Allocations: 10687)
+
+

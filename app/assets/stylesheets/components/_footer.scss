@@ -1,0 +1,24 @@
+/* Apply this to the entire document to ensure full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* This ensures that the content takes at least the full height of the viewport */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This grows the main content area to take the available space */
+.main-content {
+  flex: 1;
+}
+
+/* Style your footer as needed */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
