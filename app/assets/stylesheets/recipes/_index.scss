@@ -17,53 +17,34 @@
   border-radius: 20px
 }
 
-.recipes-cards-collection {
+
+//search button
+
+.button-container {
   display: flex;
-  width: 1440px;
-  flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height to center vertically */
 }
-
-.ingredients-form-container {
-  display: flex;
-  text-align: center;
-}
-
-.ingredients-text-field {
-  width: 986px;
-  height: 62px;
-  border-radius: 20px;
-  font-size: 20px;
-  padding: 20px;
-}
-
 
 .ingredients-button {
-  background-color: #4CAF50;
-  /* Green */
-  border: none;
-  color: white;
-  padding: 9px 40px;
-  /* Adjusted padding for a normal size button */
+  width: 200px;
+  /* Match the width */
+  background-color: #FBC41C;
+  border: 2px solid #161616;
+  padding: 10px;
   text-align: center;
-  text-decoration: none;
-
-  font-size: 14px;
-  /* Adjusted font size */
-  margin: 12px 12px;
-  cursor: pointer;
-  border-radius: 10px;
-
+  box-shadow: 10px 10px 0px 0px #000000;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: rgb(0, 0, 0);
+  /* Set text color */
+  font-size: 16px;
+  /* Removed duplicate and unnecessary properties */
 }
 
 .ingredients-button:hover {
-  background-color: #1f4e21;
-  /* Darker Green */
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px 0px #000000;
 }
-
-// .text_field {
-
-// }
-
-
-// hello

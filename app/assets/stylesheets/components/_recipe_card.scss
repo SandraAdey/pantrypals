@@ -1,38 +1,34 @@
 .recipe-card-container {
-  width: 200px;
-  margin-bottom: 30px;
+  width: 300px;
+  background-color: #fff;
+  border: 2px solid #000000;
+  padding: 7px;
+  text-align: center;
+  box-shadow: 10px 10px 0px 0px #FBC41C;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0px 0px #FBC41C;
+}
+
+.recipe-card-container:active {
+  cursor: grabbing;
+  /* Change cursor to grabbing when clicked */
 }
 
 .recipe-card-image {
   width: 100%;
-  height: 150px;
-  border-radius: 10px;
+
+  margin-bottom: 10px;
 }
+
+
 
 .recipe-card-title {
-  text-align: center;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 15px;
-  height: 45px;
-  align-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
 }
-
-.recipe-card-button {
-  text-align: center;
-  color: white;
-  width: 150px;
-  background-color: #4CAF50;
-  border-radius: 10px;
-  margin: auto 20px;
-  padding: 5px;
-  border: 3px dashed #4CAF50;
-  /* Change border style to dashed */
-}
-// hello
-// .recipe-background {
-//   background-image: url('vegback.png');
-//   background-repeat: repeat-y;
-//   padding: 0;
-//   background-size: 100% 60%;
-//  }

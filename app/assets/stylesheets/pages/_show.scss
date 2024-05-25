@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .recipe-page {
   background-color: #fff;
-  border-radius: 15px;
-  padding: 20px;
+  padding-top: 40px;
+
+  padding: 30px;
   max-width: 800px;
   margin: 0 auto;
+  border: 2px solid #000000;
+  box-shadow: 10px 10px 0px 0px #fbc41c;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Adjust the values as needed */
 }
 
 .recipe-header {
@@ -17,31 +23,37 @@
   margin-bottom: 20px;
   display: flex; // Corrected: Removed quotes
   flex-direction: column; // Corrected: Removed quotes
+  background-color: #fbc41c;
+  padding: 10px;
+    margin: 0 auto;
+      border: 2px solid #000000;
+      box-shadow: 10px 10px 0px 0px #010101;
+      cursor: grab;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+h2 {
+  font-size: 2em;
+  color: #15452b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
 
-  h2 {
-    font-size: 2em;
-    color: #15452B;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    padding-bottom: 20px;
-  }
+p {
+  font-size: 1em;
+  color: black;
+}
 
-  p {
-    font-size: 1em;
-    color: black;
-  }
+.favorite-link {
+  margin: 20px;
+}
 
-  .favorite-link {
-    margin: 20px;
-  }
-
-  .favorite-button {
-    background: none;
-    border: none;
-    color: red;
-    margin: 20px;
-    font-size: 25px;
-  }
+.favorite-button {
+  background: none;
+  border: none;
+  color: red;
+  margin: 20px;
+  font-size: 25px;
 }
 
 .recipe-image {
@@ -55,9 +67,8 @@
   max-width: 500px;
   height: auto;
   padding-bottom: 20px;
-
+  padding-top: 20px;
 }
-
 
 .recipe-summary {
   text-align: left;
@@ -73,7 +84,8 @@
     color: #333;
   }
 
-  ul, ol {
+  ul,
+  ol {
     display: inline-block;
     text-align: left;
     padding-left: 20px;
@@ -128,4 +140,14 @@
     cursor: pointer;
     text-decoration: none;
   }
+}
+
+.custom-color {
+  background-color: #fbc41c;
+  color: #000000;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  box-shadow: 10px 10px 0px 0px #000000;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
