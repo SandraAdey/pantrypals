@@ -1,12 +1,22 @@
-<div class="recipe-card-container">
-  <% if recipe['image'] %>
-  <%= image_tag recipe['image'], class:"recipe-card-image", alt: recipe['title'] %>
-  <% else %>
-  <%= image_tag "back.png", class:"recipe-card-image"%>
-  <% end %>
-  <p class="recipe-card-title"><%= recipe['title'] %></p>
-  <form action=<%= "/recipes/#{recipe['id']}" %>>
-    <button class="recipe-card-button" type='submit' style="color: white;">View</button>
-  </form>
-</div>
-<%# hello %>
+<form action="<%= recipe_path(recipe['id']) %>" method="get" class="recipe-card-form">
+  <div class="recipe-card-container">
+    <% if recipe['image'] %>
+      <%= image_tag recipe['image'], class: "recipe-card-image", alt: recipe['title'] %>
+    <% else %>
+      <%= image_tag "back.png", class: "recipe-card-image" %>
+    <% end %>
+    <p class="recipe-card-title"><%= recipe['title'] %></p>
+
+  </div>
+  <button class="recipe-card-button" type="submit" style="display: none;">View</button>
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.recipe-card-container').forEach(container => {
+      container.addEventListener('click', function() {
+        this.closest('form').submit();
+      });
+    });
+  });
+</script>

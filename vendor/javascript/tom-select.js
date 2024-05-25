@@ -1359,6 +1359,14 @@
 	const applyCSS = (dom_el, css) => {
 	  Object.assign(dom_el.style, css);
 	};
+const myDiv = document.getElementById('myDiv');
+applyCSS(myDiv, {
+  backgroundColor: 'blue',
+  color: 'white',
+  padding: '10px',
+  borderRadius: '5px',
+  border: '2px solid black'
+});
 
 	/**
 	 * Add css classes
@@ -1688,7 +1696,7 @@
 	};
 
 	/**
-	 * use setTimeout if timeout > 0 
+	 * use setTimeout if timeout > 0
 	 */
 	const timeout = (fn, timeout) => {
 	  if (timeout > 0) {
@@ -5294,5 +5302,4 @@
 	return TomSelect;
 
 }));
-var tomSelect=function(el,opts){return new TomSelect(el,opts);} 
-
+var tomSelect=function(el,opts){return new TomSelect(el,opts);}

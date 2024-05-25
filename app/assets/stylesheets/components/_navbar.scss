@@ -1,15 +1,17 @@
 .navbar {
-  //background-color: #E5EED2;
-  padding: 20px
+  background-color: #ffffff;
+
+  height: 90px;
 }
 
 .nav-link {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 32px;
+  font-family: 'Poppins';
+  font-size: 25px;
   font-weight: bold;
 }
 
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -22,10 +24,61 @@
 }
 
 .navbar-nav {
+  display: flex;
   align-items: center;
 }
 
 .red-item {
   font-size: 40px;
-  color: red
+  color: red;
+  /* Solid drop shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* You can adjust the values as needed */
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.red-item:hover {
+  /* Adjust the shadow to make it more prominent on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+.main-title {
+  font-size: 36px;
+  /* Adjust font size as needed */
+}
+
+.outline {
+  color: transparent;
+  /* Make text transparent */
+  -webkit-text-stroke: 1px black;
+  /* Add black outline with 1px width */
+  text-stroke: 0.5px black;
+  /* Add black outline with 0.5px width */
+  -webkit-text-fill-color: white;
+  /* Add white fill color */
+  text-fill-color: white;
+  /* Add white fill color */
+}
+.nav-link nav-title {
+  font-size: 2px;
+}
+
+
+
+
+@mixin white-gradient {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7))
+  }
 }

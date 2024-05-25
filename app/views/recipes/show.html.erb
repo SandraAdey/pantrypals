@@ -4,6 +4,7 @@
   <div class="recipe-header">
     <div class="recipe-title">
       <h2><%= @recipe['title'] %></h2>
+      </div>
       <img src="<%= @recipe['image'] %>" class="recipe-image">
       <% if @favorite.nil? %>
         <form action=<%= "/favorites?recipe_id=#{@recipe["id"]}" %> method='POST'>
@@ -14,7 +15,7 @@
           <button class="favorite-button" type='submit'><i class="fa-solid fa-heart"></i></button>
         </form>
       <% end %>
-    </div>
+
     <p style="text-align: left;">
       <%= raw(@recipe['summary']) %>
     </p>
@@ -22,14 +23,14 @@
 
   <div class="recipe-body">
 
-    <h3 class="sub-title" style="color: #15452B; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Ingredients</h3>
+    <h3 class="sub-title" style="color: black; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Ingredients</h3>
     <ul>
       <% @recipe['extendedIngredients'].each do |ingredient| %>
         <li><%= ingredient['original'] %></li>
       <% end %>
     </ul>
 
-    <h3 class="sub-title" style="color: #15452B; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Instructions</h3>
+    <h3 class="sub-title" style="color: black; font-family: 'Poppins', sans-serif; text-align: center; font-size: 30px;">Instructions</h3>
     <ol>
       <%= raw @recipe['instructions'] %>
     </ol>
@@ -53,24 +54,24 @@
 .review-rating {
   font-size: 1.2em;
   font-weight: bold;
-  color: #ff9800; /* Example: Orange color for ratings */
+  color: #FBC41C; /* Example: Orange color for ratings */
 }
 
 </style>
     <!-- SEE REVIEWS-->
 <div style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; margin: 20px 0; background-color: #f9f9f9;">
   <div style="margin: 0 0 10px; font-size: 24px; color: #333;">
-    <h2 class="text-center">Recipe Reviews</h2>
+    <h2 class="text-center black">Recipe Reviews</h2>
   </div>
   <div style="font-size: 16px; line-height: 1.5; color: #555;">
     <div class="reviews-section">
       <% @recipe_reviews.each do |review| %>
         <div class="review-container" style="background-color: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
           <p class="review-comment" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">Comment: <%= review.comment %></p>
-          <p class="review-rating" style="font-size: 1.2em; font-weight: bold; color: #ff9800;">
+          <p class="review-rating" style="font-size: 1.2em; font-weight: bold; color: #FBC41C;">
 
             <% review.rating.times do %>
-              <span class="star" style="color: #ff9800;">&#9733;</span>
+              <span class="star" style="color: #FBC41C;">&#9733;</span>
             <% end %>
             <% (5 - review.rating).times do %>
               <span class="star empty" style="color: #ddd;">&#9734;</span>
@@ -97,7 +98,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="reviewModalLabel" style="background-color: #4CAF50; border-color: #4CAF50; border-radius: 10px;>Leave a Review</h5>
+            <h5 class="modal-title" id="reviewModalLabel">Leave a Review</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -123,7 +124,7 @@
                 <label for="review_comment" class="form-label">Comment</label>
                 <textarea class="form-control" id="review_comment" name="review[comment]" rows="3" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary" style="background-color: #4CAF50; border-color: #4CAF50; border-radius: 10px;">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
 
             </form>
           </div>

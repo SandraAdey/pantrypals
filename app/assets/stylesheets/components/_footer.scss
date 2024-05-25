@@ -9,6 +9,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 /* This grows the main content area to take the available space */
@@ -18,7 +19,8 @@ body {
 
 /* Style your footer as needed */
 footer {
-  background-color: #f8f9fa;
+
   padding: 20px 0;
   text-align: center;
+
 }

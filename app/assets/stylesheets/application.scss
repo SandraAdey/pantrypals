@@ -14,27 +14,12 @@
 @import "recipes/index";
 
 
-html {
-  background-color: #E5EED2;
-}
+
 
 body {
-  // /* Set width and height to fill the entire viewport */
-  // width: 100vw;
-  // height: 100vh;
-
-  // /* Remove any default margin */
-  // margin: 0;
-
-  /* Set background properties */
-  background-image: url('vegback.png');
-  background-repeat: repeat-y;
-  padding: 0;
-  background-size: 100%;
-  // // background-color: #E5EED2;
-
-  // /* Ensure the body serves as a positioning context */
-  // position: relative;
+   background-image: url('back.png');
+   background-size:cover;
+  //  background-color: #E5EED2;
 }
 
 /* Media query for smaller screens */

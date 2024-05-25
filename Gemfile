@@ -12,6 +12,7 @@ gem "sprockets-rails"
 gem 'ruby-openai'
 # Gemfile
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'httparty'
 
 
 # Use postgresql as the database for Active Record
