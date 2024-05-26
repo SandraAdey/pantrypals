@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :favorites, only: [:index, :create, :destroy]
 
+
   root to: "recipes#index"
 
   resources :recipes do

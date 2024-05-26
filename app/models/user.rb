@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_many :ingredients
   has_many :favorited_recipes, through: :favorites, source: :recipe
 
+
   def favorite(recipe)
     favorites.create(recipe: recipe)
   end
