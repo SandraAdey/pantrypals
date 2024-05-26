@@ -13923,3 +13923,46 @@ Processing by FavoritesController#index as HTML
 Completed 200 OK in 1337ms (Views: 32.2ms | ActiveRecord: 17.6ms | Allocations: 18739)
 
 
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-26 12:31:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 962)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 571)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 91.2ms | Allocations: 81035)
+Completed 200 OK in 165ms (Views: 94.1ms | ActiveRecord: 21.2ms | Allocations: 113782)
+
+
+Started GET "/favorites" for 127.0.0.1 at 2024-05-26 12:31:44 +0100
+Processing by FavoritesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/favorites_controller.rb:5:in `map'
+  Rendering layout layouts/application.html.erb
+  Rendering favorites/index.html.erb within layouts/application
+  Rendered shared/_recipe_card.html.erb (Duration: 3.6ms | Allocations: 1763)
+  Rendered favorites/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2338)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2424)
+Completed 500 Internal Server Error in 801ms (ActiveRecord: 5.4ms | Allocations: 15297)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"recipes", :id=>nil}, missing required keys: [:id]):
+    1: <form action="<%= recipe_path(recipe['id']) %>" method="get" class="recipe-card-form">
+    2:   <div class="recipe-card-container">
+    3:     <% if recipe['image'] %>
+    4:       <%= image_tag recipe['image'], class: "recipe-card-image", alt: recipe['title'] %>
+  
+app/views/shared/_recipe_card.html.erb:1
+app/views/favorites/index.html.erb:17
+app/views/favorites/index.html.erb:15:in `each'
+app/views/favorites/index.html.erb:15:in `each_with_index'
+app/views/favorites/index.html.erb:15
