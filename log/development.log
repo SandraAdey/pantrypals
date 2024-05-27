@@ -13621,3 +13621,47 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 11011)
 
 
+[dotenv] Set [36mRAPID_API[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+[dotenv] Set [36mRAPID_API[0m
+[dotenv] Loaded [33m.env[0m
+DEPRECATION WARNING: `Rails.application.secrets` is deprecated in favor of `Rails.application.credentials` and will be removed in Rails 7.2. (called from <main> at /Users/sandraadeyinka/Desktop/pantrypals/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2024-05-27 11:35:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 960)
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 571)
+  Rendered shared/_flashes.html.erb (Duration: 1.2ms | Allocations: 210)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 526.6ms | Allocations: 80310)
+Completed 200 OK in 753ms (Views: 540.7ms | ActiveRecord: 43.5ms | Allocations: 112810)
+
+
+Started GET "/recipes?recipe%5Bingredients%5D=eggs&commit=Find+recipes" for 127.0.0.1 at 2024-05-27 11:35:48 +0100
+Processing by RecipesController#index as HTML
+  Parameters: {"recipe"=>{"ingredients"=>"eggs"}, "commit"=>"Find recipes"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered shared/_recipe_card.html.erb (Duration: 1.8ms | Allocations: 334)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendered shared/_recipe_card.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered recipes/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1592)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 135)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 10365)
+Completed 200 OK in 1377ms (Views: 34.1ms | ActiveRecord: 1.3ms | Allocations: 14344)
+
+
