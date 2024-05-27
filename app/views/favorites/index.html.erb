@@ -11,14 +11,13 @@
   <% end %>
 
   <% if @favorites.any? %>
-    <div class="row">
+    <div class="recipe-grid">
       <% @favorites.each_with_index do |recipe, index| %>
-        <div class="col-md-4 mb-4">
           <%= render 'shared/recipe_card', recipe: recipe %>
-        </div>
-        <% if (index + 1) % 3 == 0 %>
-          <div class="w-100"></div>
-        <% end %>
+
+        <%# <% if (index + 1) % 3 == 0 %>
+          <%# <div class="w-100"></div> %>
+        <%# <% end %>
       <% end %>
     </div>
   <% else %>
