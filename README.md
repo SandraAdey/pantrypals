@@ -29,8 +29,8 @@ Contributors
 ----
 <ul>
   <li>Rumaysaa Mohamed <a href="https://github.com/Gladiolu">github</a></li>
-  <li>Khalil Hersi<a href="https://github.com/Silver1H">github</a></li>
-  <li>Gianna Sharni<a href="https://github.com/GiannaSharni">github</a></li>
+  <li>Khalil Hersi <a href="https://github.com/Silver1H">github</a></li>
+  <li>Gianna Sharni <a href="https://github.com/GiannaSharni">github</a></li>
 </ul>
 
  
