@@ -24,3 +24,13 @@ We absolutely love our product and we would like to update the background image.
 old
 <img width="1378" alt="Screenshot 2024-05-23 at 20 54 10" src="https://github.com/SandraAdey/pantrypals/assets/117900792/517653f3-c621-44ea-b699-db6681f1bb9b">
 <img width="1367" alt="Screenshot 2024-05-23 at 20 53 46" src="https://github.com/SandraAdey/pantrypals/assets/117900792/2c3e3943-d2a0-41e7-ab9c-a51abf65b6fd">
+
+Contributors
+----
+<ul>
+  <li>Rumaysaa Mohamed <a href="https://github.com/Gladiolu">github</a></li>
+  <li>Khalil Hersi<a href="https://github.com/Silver1H">github</a></li>
+  <li>Gianna Sharni<a href="https://github.com/GiannaSharni">github</a></li>
+</ul>
+
+ 
