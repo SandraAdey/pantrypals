@@ -18,9 +18,16 @@ Next Steps
 ----
 We absolutely love our product and we would like to update the background image. We also plan to create a mobile version of our app in the future as it is currently only available on desktop.
 
-<img width="1368" alt="Screenshot 2024-05-25 at 22 59 20" src="https://github.com/SandraAdey/pantrypals/assets/117900792/c9bc13b1-699e-458b-9bb4-a3f428789eb8">
+<img width="1295" alt="Screenshot 2024-05-27 at 12 18 39" src="https://github.com/SandraAdey/pantrypals/assets/117900792/8c821736-964e-4ce6-91b2-037f6fe62d32">
 <img width="1374" alt="Screenshot 2024-05-25 at 23 13 16" src="https://github.com/SandraAdey/pantrypals/assets/117900792/65f96462-5200-4bfc-8f53-ce967dd4120c">
 <img width="1380" alt="Screenshot 2024-05-25 at 23 12 24" src="https://github.com/SandraAdey/pantrypals/assets/117900792/c3ec4036-e480-4355-98eb-5121a56cd4e6">
-old
-<img width="1378" alt="Screenshot 2024-05-23 at 20 54 10" src="https://github.com/SandraAdey/pantrypals/assets/117900792/517653f3-c621-44ea-b699-db6681f1bb9b">
-<img width="1367" alt="Screenshot 2024-05-23 at 20 53 46" src="https://github.com/SandraAdey/pantrypals/assets/117900792/2c3e3943-d2a0-41e7-ab9c-a51abf65b6fd">
+
+Contributors
+----
+<ul>
+  <li>Rumaysaa Mohamed <a href="https://github.com/Gladiolu">github</a></li>
+  <li>Khalil Hersi <a href="https://github.com/Silver1H">github</a></li>
+  <li>Gianna Sharni <a href="https://github.com/GiannaSharni">github</a></li>
+</ul>
+
+ 
